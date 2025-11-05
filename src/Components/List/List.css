@@ -1,0 +1,13 @@
+.list ul {
+    align-self: flex-start;
+    /* move h2 to the left */
+    margin-left: 150px;
+    /* optional spacing */
+}
+
+.list h2 {
+    align-self: flex-start;
+    /* move h2 to the left */
+    margin-left: 150px;
+    /* optional spacing */
+}

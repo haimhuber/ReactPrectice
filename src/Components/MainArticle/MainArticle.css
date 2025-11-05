@@ -1,0 +1,18 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    align-items: center;
+    /* center images horizontally */
+}
+
+.article h2 {
+    align-self: flex-start;
+    /* move h2 to the left */
+    margin-left: 150px;
+    /* optional spacing */
+}
+
+.article p {
+    margin-left: 150px;
+}
