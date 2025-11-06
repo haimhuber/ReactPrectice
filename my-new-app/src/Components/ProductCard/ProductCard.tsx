@@ -2,18 +2,19 @@ import './ProductCard.css';
 import React from 'react'
 
 type ProductProps = {
-    productName: string;
-    productDescription: string;
-    price: string;
+    name: string;
+    price: number;
+    inStock: boolean;
+
 }
 
 const ProductCard: React.FC<ProductProps> =
-    ({ productName, productDescription, price }) => {
+    ({ name, price, inStock }) => {
         return (
             <div className='product-card'>
-                <h3>{productName}</h3>
-                <p>{productDescription}</p>
-                <p>Price: {price}</p>
+                <h3>Name: {name}</h3>
+                <p>Price: {price}$</p>
+                <p>In Stock : {inStock ? 'No' : 'Yes'}</p>
             </div>
         );
     }
