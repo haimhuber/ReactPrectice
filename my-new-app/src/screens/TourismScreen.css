@@ -1,0 +1,37 @@
+.tousizm {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows multiple rows */
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically (per row) */
+    gap: 10px;
+    /* space between images */
+    width: 100%;
+    /* full width of container */
+    /* padding: 20px; */
+}
+
+.tousizm img {
+    width: 200px;
+    /* fixed image width */
+    height: 150px;
+    /* fixed image height */
+    object-fit: cover;
+    /* crops image nicely */
+    border-radius: 8px;
+    /* rounded corners */
+    transition: transform 0.3s;
+}
+
+.tousizm img:hover {
+    transform: scale(1.05);
+    /* zoom on hover */
+}
+
+.main {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
