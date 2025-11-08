@@ -1,0 +1,34 @@
+/* Container for each question */
+.question-name {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 16px auto;
+    max-width: 600px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.question-name:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: if QuestionCard has text inside */
+.question-card {
+    text-align: left;
+    color: #222;
+}
+
+.question-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+.question-card p {
+    font-size: 1rem;
+    color: #555;
+}

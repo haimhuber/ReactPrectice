@@ -1,0 +1,20 @@
+/* Gallery container */
+.employee-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap cards to next line if needed */
+    justify-content: center;
+    /* Center cards horizontally */
+    gap: 24px;
+    /* Space between cards */
+    padding: 30px;
+    background-color: #f0f4f8;
+}
+
+
+/* Optional: make gallery full width */
+.employee-gallery>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

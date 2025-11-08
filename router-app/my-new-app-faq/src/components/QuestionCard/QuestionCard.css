@@ -1,0 +1,31 @@
+.question-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    margin: 15px auto;
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.question-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.question-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.question-card::before {
+    content: "❓";
+    color: #4f46e5;
+    font-size: 1.4rem;
+    margin-right: 8px;
+}

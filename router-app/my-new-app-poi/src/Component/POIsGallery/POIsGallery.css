@@ -1,0 +1,59 @@
+/* Main container for the two-column layout */
+.poi-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left side: POI list */
+.poi-list {
+    width: 70%;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+/* Right side: POI details (Outlet area) */
+.poi-details {
+    width: 30%;
+    padding: 20px;
+    border-left: 2px solid #e5e7eb;
+    background-color: #ffffff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+}
+
+/* Scroll behavior */
+.poi-list::-webkit-scrollbar,
+.poi-details::-webkit-scrollbar {
+    width: 8px;
+}
+
+.poi-list::-webkit-scrollbar-thumb,
+.poi-details::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 4px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .poi-layout {
+        flex-direction: column;
+    }
+
+    .poi-list,
+    .poi-details {
+        width: 100%;
+    }
+
+    .poi-details {
+        border-left: none;
+        border-top: 2px solid #e5e7eb;
+        box-shadow: none;
+    }
+}

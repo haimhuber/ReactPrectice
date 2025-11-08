@@ -1,8 +1,8 @@
-import './ProductListRevised.css';
+import './AboutUs.css';
 import ProductCard from '../ProductCard/ProductCard';
 import React from 'react'
 
-export const ProductListRevised = () => {
+export const AboutUs = () => {
 
     const products = [
         { id: 1, name: "Laptop", price: 4500, inStock: true },

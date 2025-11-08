@@ -1,0 +1,38 @@
+.poi-details {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poi-details:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.poi-details h3 {
+    font-size: 1.6rem;
+    color: #1e293b;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.poi-details p {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.poi-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
